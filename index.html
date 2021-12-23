@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>NFT Wallet</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <div id="nft-display-el" hidden>
+  <h2>NFT Display</h2>
+  <h1 id="nft1"></h1>
+  <h2 id="nft1TokenAddress"></h2>
+  <img src="" alt="nfts loading..." hidden id="img0" width="400px" height="400px">
+  </div>
+<br>
+  <button id="btn-login">Login with Metamask</button>
+  <button id="btn-logout" hidden>Logout</button>
+  <br>
+  
+  <br>
+  <form action="" hidden id="form-el">
+    <h2>Send Ethereum to a specified address</h2>
+    <label for="input-num-el" id="num-label-el">ETH to transfer:</label>
+    <input type="number" id="input-num-el">
+    <br>
+    <label for="input-address-el" id="add-label-el">Address:</label>
+    <input type="text" id="input-address-el">
+    <br>
+    <button onclick="transfer()" type="button" id="transfer-btn">Transfer ETH</button>
+  </form>
+  <script src="./main.js"></script>
+</body>
+
+</html>
